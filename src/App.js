@@ -1,5 +1,16 @@
+import Container from './components/Container';
+import Header from './layout/Header';
+import Main from './layout/Main';
+import Footer from './layout/Footer';
+
 function App() {
-    return <div className="App">всем привет</div>;
+    return (
+        <Container>
+            <Header />
+            <Main />
+            <Footer />
+        </Container>
+    );
 }
 
 export default App;
