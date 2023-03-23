@@ -35,6 +35,11 @@
                     color: #e4e5ea;
                     text-decoration: none;
                     @include headerText;
+                    transition: 0.1s ease-in-out;
+
+                    &:hover {
+                        color: #fcb045;
+                    }
                 }
             }
         }

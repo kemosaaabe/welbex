@@ -6,10 +6,12 @@ const Header = () => {
             <div className={styles.headerInner}>
                 <div className={styles.navLogo}>
                     <div className={styles.logo}>
-                        <img
-                            src="/assets/img/logo_welbex.svg"
-                            alt="logo welbex"
-                        />
+                        <a href="/">
+                            <img
+                                src="/assets/img/logo_welbex.svg"
+                                alt="logo welbex"
+                            />
+                        </a>
                     </div>
                     <nav className={styles.nav}>
                         <ul className={styles.navList}>
