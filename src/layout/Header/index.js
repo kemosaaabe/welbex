@@ -1,6 +1,9 @@
 import styles from './Header.module.scss';
+import { useMediaQuery } from '../../services/useMediaQuery';
 
 const Header = () => {
+    const isMobile = useMediaQuery('(max-width: 650px)');
+
     return (
         <header className={styles.header}>
             <div className={styles.headerInner}>
@@ -27,9 +30,11 @@ const Header = () => {
                             <li className={styles.navListItem}>
                                 <a href="/">Кейсы</a>
                             </li>
-                            <li className={styles.navListItem}>
-                                <a href="/">Сертификаты</a>
-                            </li>
+                            {!isMobile && (
+                                <li className={styles.navListItem}>
+                                    <a href="/">Сертификаты</a>
+                                </li>
+                            )}
                         </ul>
                     </nav>
                 </div>
