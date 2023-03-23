@@ -1,3 +1,60 @@
-.header {
-    padding-top: 40px;
+@mixin headerText {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.headerInner {
+    padding-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLogo {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .nav {
+        .logo {
+            img {
+                width: 140px;
+                height: auto;
+            }
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+
+            li {
+                a {
+                    color: #e4e5ea;
+                    text-decoration: none;
+                    @include headerText;
+                }
+            }
+        }
+    }
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    @include headerText;
+    gap: 45px;
+
+    .icons {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.logoDescription {
+    width: 140px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
 }
