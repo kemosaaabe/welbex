@@ -4,11 +4,42 @@ import Ball from '../../components/Ball';
 const Main = () => {
     return (
         <section className={styles.mainSection}>
-            <div className="title">
+            <div className={styles.title}>
                 <h1>
                     Зарабатывайте больше <span>с WELBEX</span>
                 </h1>
                 <p>Развиваем и контролируем продажи за вас</p>
+            </div>
+            <div className={styles.infoBlock}>
+                <h2>
+                    Вместе c <span>бесплатной</span> <span>консультацией</span>{' '}
+                    мы дарим:
+                </h2>
+                <div className={styles.info}>
+                    <div className={styles.column}>
+                        <div>
+                            <h4>Виджеты</h4>
+                            <p>30 готовых решений</p>
+                        </div>
+                        <div>
+                            <h4>Skype Аудит</h4>
+                            <p>отдела продаж и CRM системы</p>
+                        </div>
+                    </div>
+                    <div className={styles.column}>
+                        <div>
+                            <h4>Dashboard</h4>
+                            <p>c показателями вашего бизнеса</p>
+                        </div>
+                        <div>
+                            <h4>35 дней</h4>
+                            <p>использования CRM</p>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.btn}>
+                    <a href="/">Получить консультацию</a>
+                </div>
             </div>
             <Ball
                 styles={{
