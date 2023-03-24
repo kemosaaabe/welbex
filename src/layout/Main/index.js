@@ -20,8 +20,8 @@ const Balls = () => {
             />
             <Ball
                 styles={{
-                    width: isMobile ? '311px' : '211px',
-                    height: isMobile ? '311px' : '211px',
+                    width: isMobile ? '211px' : '311px',
+                    height: isMobile ? '211px' : '311px',
                     left: isMobile ? '-151px' : '-302px',
                     top: isMobile ? '151px' : '251px',
                     background: '#961A1A',
