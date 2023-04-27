@@ -63,19 +63,19 @@ const Footer = () => {
                         <div className={styles.icons}>
                             <a href="/">
                                 <img
-                                    src="/assets/img/headerIcons/telegram.svg"
+                                    src="assets/img/headerIcons/telegram.svg"
                                     alt="telegram"
                                 />
                             </a>
                             <a href="/">
                                 <img
-                                    src="/assets/img/headerIcons/viber.svg"
+                                    src="assets/img/headerIcons/viber.svg"
                                     alt="viber"
                                 />
                             </a>
                             <a href="/">
                                 <img
-                                    src="/assets/img/headerIcons/whatsapp.svg"
+                                    src="assets/img/headerIcons/whatsapp.svg"
                                     alt="whatsApp"
                                 />
                             </a>
